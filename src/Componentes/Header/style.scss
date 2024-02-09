@@ -1,1 +1,41 @@
-@import '../../styles/variaveis.scss';
+@import "../../styles/variaveis.scss";
+
+.header-portfolio {
+  width: 100dvw;
+  height: 50px;
+  background-color: $preto-desbotado;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-portfolio > nav {
+  justify-content: space-between;
+  a {
+    font-size: 1.1rem;
+    color: $branco;
+    transition: transform 0.2s;
+    text-decoration: none;
+    margin: auto 2vw;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $branco-desbotado;
+      border-radius: 1px;
+      transform: scaleX(0);
+      transition: transform 0.3s;
+    }
+
+    &:hover {
+      &:after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}

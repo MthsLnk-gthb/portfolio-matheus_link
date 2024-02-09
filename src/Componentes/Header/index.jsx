@@ -1,6 +1,6 @@
 import './style.scss'
 
-const index = () => {
+const Header = () => {
   return (
     <header className="header-portfolio">
       <nav>
@@ -14,4 +14,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Header;
