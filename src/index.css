@@ -5,6 +5,11 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body{
+  background-image: url("../public/imgs/wave-haikei.svg");
+  background-size: cover;
+}
+
 .App{
   display: flex;
   flex-direction: column;

@@ -1,0 +1,67 @@
+[
+  {
+    "curso": "JavaScript I: algoritmos de ordenação",
+    "escola": "Alura",
+    "tipo": "JavaScript"
+  },
+  {
+    "curso": "Algoritmos com JavaScript II: aprofundando em algoritmos de ordenação e busca",
+    "escola": "Alura",
+    "tipo": "JavaScript"
+  },
+  {
+    "curso": "JavaScript para Web: Crie páginas dinâmicas",
+    "escola": "Alura",
+    "tipo": "JavaScript"
+  },
+  {
+    "curso": "JavaScript: Arrays",
+    "escola": "Alura",
+    "tipo": "JavaScript"
+  },
+  {
+    "curso": "JavaScript: classes e heranças no desenvolvimento de aplicações com orientação a objetos",
+    "escola": "Alura",
+    "tipo": "JavaScript"
+  },
+  {
+    "curso": "JavaScript: consumindo e tratando dados de uma API",
+    "escola": "Alura",
+    "tipo": "JavaScript"
+  },
+  {
+    "curso": "JavaScript: manipulando objetos",
+    "escola": "Alura",
+    "tipo": "JavaScript"
+  },
+  {
+    "curso": "JavaScript: validando formulários",
+    "escola": "Alura",
+    "tipo": "JavaScript"
+  },
+  {
+    "curso": "JavaScript, do iniciante ao mestre",
+    "escola": "Udemy",
+    "tipo": "JavaScript"
+  },
+  {
+    "curso": "Node.js e terminal: dominando o ambiente de desenvolvimento front-end",
+    "escola": "Alura",
+    "tipo": "Node.js"
+  },
+  {
+    "curso": "React: comece seu projeto full stack",
+    "escola": "Alura",
+    "tipo": "React"
+  },
+  {
+    "curso": "React: como os componentes funcionam",
+    "escola": "Alura",
+    "tipo": "React"
+  },
+  {
+    "curso": "Git e GitHub: compartilhando e colaborando em projetos",
+    "escola": "Alura",
+    "tipo": "Git/GitHub"
+  }
+]
