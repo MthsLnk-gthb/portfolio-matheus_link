@@ -1,1 +1,74 @@
-@import '../../styles/variaveis.scss';
+@import "../../styles/variaveis.scss";
+
+#pagina-habilidades {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  width: 100dvw;
+  background-color: $azul-05;
+}
+
+.lista-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 10dvh auto;
+  max-width: 80%;
+}
+
+.habilidade {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  flex-basis: calc(33.33% - 40px);
+  max-width: calc(25% - 40px);
+  margin-bottom: 40px;
+  border: 2px solid transparent;
+  border-radius: $retangulo-cantos-arredondados;
+  background-color: $azul-04;
+  transition: border-color 0.5s ease-in;
+
+  h5 {
+    color: $azul-05;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  div>img{
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover {
+    border: 2px solid $azul-01;
+
+    h5{
+        color: $azul-05;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-basis: calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+}
+
+.habilidade:hover img {
+  animation: icon-pulse 2s infinite;
+}
+
+@keyframes icon-pulse {
+  25% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(0.8);
+  }
+}
