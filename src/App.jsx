@@ -1,14 +1,16 @@
-import Habilidades from "./Componentes/Habilidades"
-import Header from "./Componentes/Header"
+import Habilidades from "./Componentes/Habilidades";
+import Header from "./Componentes/Header";
+import Inicio from "./Componentes/Inicio/index";
 
 function App() {
- return(
-  <main className="App">
-    <Header/>
-    <Habilidades/>
-  </main>
- )
+  return (
+    <>
+      <main className="App">
+      <Header />
+        <Inicio />
+      </main>
+    </>
+  );
 }
 
-export default App
-
+export default App;

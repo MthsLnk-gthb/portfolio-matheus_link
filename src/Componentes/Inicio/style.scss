@@ -1,1 +1,69 @@
-@import '../../styles/variaveis.scss';
+@import "../../styles/variaveis.scss";
+
+#pagina-inicial {
+  background-image: url("../public/imgs/wave-haikei.svg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 0;
+}
+
+.introducao-e-botoes {
+  width: 400px;
+
+  .botoes {
+    display: flex;
+    margin-top: 2dvh;
+    width: 100%;
+    justify-content: space-between;
+
+    button {
+      width: 180px;
+      max-width: 25dvw;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid $branco-desbotado;
+      color: $branco;
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: ease 0.4s;
+
+      &:hover {
+        cursor: pointer;
+        border: 1px solid $branco;
+      }
+    }
+
+    .btn-linkedin {
+      background-color: transparent;
+
+      &:hover {
+        background-color: $azul-03;
+      }
+    }
+
+    .btn-github {
+      background-color: transparent;
+
+      &:hover{
+        background-color: $cinza-01;
+      }
+    }
+  }
+}
+
+.minha-foto {
+  width: 220px;
+  height: 220px;
+
+  background-color: $azul-02;
+  border-radius: $circulo;
+  overflow: hidden;
+}
+.minha-foto img {
+  width: 100%;
+}
