@@ -6,7 +6,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: space-around;
   align-items: center;
   z-index: 0;
@@ -49,7 +49,7 @@
     .btn-github {
       background-color: transparent;
 
-      &:hover{
+      &:hover {
         background-color: $cinza-01;
       }
     }
@@ -65,5 +65,6 @@
   overflow: hidden;
 }
 .minha-foto img {
-  width: 100%;
+  scale: 1.2;
+  filter: saturate(130%) contrast(120%);
 }

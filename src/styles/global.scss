@@ -11,6 +11,7 @@
 body{
   background-image: url("../public/imgs/wave-haikei.svg");
   background-size: cover;
+  scroll-behavior: smooth;
 }
 
 .App{
@@ -24,5 +25,7 @@ body{
 .nome-pagina{
   color: $azul-01;
   font-size: 1.4rem;
+  margin-top: 10dvh;
   text-decoration: underline;
 }
+

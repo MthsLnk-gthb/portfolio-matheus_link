@@ -39,7 +39,7 @@ const Inicio = () => {
         </section>
 
         <section className="minha-foto">
-          <img src="public/imgs/nobg-myphoto.png" alt="Foto de Matheus Link" />
+          <img src="public/imgs/my-photo.png" alt="Foto de Matheus Link" />
         </section>
       </main>
     </>
