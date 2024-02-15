@@ -1,45 +1,55 @@
+import htmlIcon from "/public/iconsHabilidades/html-icon.svg";
+import cssIcon from "/public/iconsHabilidades/css-icon.svg";
+import sassIcon from "/public/iconsHabilidades/sass-icon.svg";
+import jsIcon from "/public/iconsHabilidades/javascript-icon.svg";
+import reactIcon from "/public/iconsHabilidades/react-icon.svg";
+import nodeIcon from "/public/iconsHabilidades/node-icon.svg";
+import javaIcon from "/public/iconsHabilidades/java-icon.svg";
+import gitIcon from "/public/iconsHabilidades/git-icon.svg";
+import gitHubIcon from "/public/iconsHabilidades/github-icon.svg";
+import figmaIcon from "/public/iconsHabilidades/figma-icon.svg";
 
 const listaHabilidades = [
   {
     habilidade: "HTML",
-    imagem: "public/iconsHabilidades/html-icon.svg",
+    imagem: htmlIcon,
   },
   {
     habilidade: "CSS",
-    imagem: "public/iconsHabilidades/css-icon.svg",
+    imagem: cssIcon,
   },
   {
     habilidade: "SASS",
-    imagem: "public/iconsHabilidades/sass-icon.svg",
+    imagem: sassIcon,
   },
   {
     habilidade: "JavaScript",
-    imagem: "public/iconsHabilidades/javascript-icon.svg",
+    imagem: jsIcon,
   },
   {
     habilidade: "React JS",
-    imagem: "public/iconsHabilidades/react-icon.svg",
+    imagem: reactIcon,
   },
   {
     habilidade: "Node JS",
-    imagem: "public/iconsHabilidades/node-icon.svg",
+    imagem: nodeIcon,
   },
   {
     habilidade: "Java",
-    imagem: "public/iconsHabilidades/java-icon.svg",
+    imagem: javaIcon,
   },
   {
     habilidade: "Git",
-    imagem: "public/iconsHabilidades/git-icon.svg",
+    imagem: gitIcon,
   },
   {
     habilidade: "GitHub",
-    imagem: "public/iconsHabilidades/github-icon.svg",
+    imagem: gitHubIcon,
   },
   {
     habilidade: "Figma",
-    imagem: "public/iconsHabilidades/figma-icon.svg",
+    imagem: figmaIcon,
   },
 ];
 
-export default listaHabilidades
+export default listaHabilidades;
