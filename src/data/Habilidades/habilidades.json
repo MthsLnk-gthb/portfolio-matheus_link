@@ -1,42 +1,42 @@
 [
     {
         "habilidade": "HTML", 
-        "imagem": "public/iconsHabilidades/html-icon.svg"
+        "imagem": "iconsHabilidades/html-icon.svg"
     },
     {
         "habilidade": "CSS", 
-        "imagem": "public/iconsHabilidades/css-icon.svg"
+        "imagem": "iconsHabilidades/css-icon.svg"
     },
     {
         "habilidade": "SASS", 
-        "imagem": "public/iconsHabilidades/sass-icon.svg"
+        "imagem": "iconsHabilidades/sass-icon.svg"
     },
     {
         "habilidade": "JavaScript", 
-        "imagem": "public/iconsHabilidades/javascript-icon.svg"
+        "imagem": "iconsHabilidades/javascript-icon.svg"
     },
     {
         "habilidade": "React JS", 
-        "imagem": "public/iconsHabilidades/react-icon.svg"
+        "imagem": "iconsHabilidades/react-icon.svg"
     },
     {
         "habilidade": "Node JS", 
-        "imagem": "public/iconsHabilidades/node-icon.svg"
+        "imagem": "iconsHabilidades/node-icon.svg"
     },
     {
         "habilidade": "Java", 
-        "imagem": "public/iconsHabilidades/java-icon.svg"
+        "imagem": "iconsHabilidades/java-icon.svg"
     },
     {
         "habilidade": "Git", 
-        "imagem": "public/iconsHabilidades/git-icon.svg"
+        "imagem": "iconsHabilidades/git-icon.svg"
     },
     {
         "habilidade": "GitHub", 
-        "imagem": "public/iconsHabilidades/github-icon.svg"
+        "imagem": "iconsHabilidades/github-icon.svg"
     },
     {
         "habilidade": "Figma", 
-        "imagem": "public/iconsHabilidades/figma-icon.svg"
+        "imagem": "iconsHabilidades/figma-icon.svg"
     }
 ]
