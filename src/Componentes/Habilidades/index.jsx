@@ -1,13 +1,14 @@
 import "./style.scss";
 
-import minhashabilidades from "../../data/Habilidades/habilidades.json";
+import minhasHabilidades from '../../data/Habilidades/habilidades.js'
 
 const Habilidades = () => {
+
   return (
     <main id="pagina-habilidades">
       <h1 className="nome-pagina">Minhas Habilidades</h1>
       <article className="lista-habilidades">
-        {minhashabilidades.map((habilidade, index) => {
+        {minhasHabilidades.map((habilidade, index) => {
           return (
             <section key={index} className="habilidade">
               <h5>{habilidade.habilidade}</h5>
