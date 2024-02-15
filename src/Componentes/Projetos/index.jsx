@@ -1,7 +1,10 @@
 import "./style.scss";
 import projetos from '../../data/Projetos/projetos.js'
+import { useEffect, useState } from "react";
+
 
 const Projetos = () => {
+
 
     const handleAcessarPagina = (linkPagina)=>{
         window.open(linkPagina, '_blank')
@@ -11,11 +14,26 @@ const Projetos = () => {
         window.open(linkRepositorio, '_blank')
     }
 
+     const [scrolled, setScrolled] = useState(false);
+
+     useEffect(() => {
+       const handleScroll = () => {
+         if (window.scrollY > 200) {
+           setScrolled(true);
+         }
+       };
+
+       window.addEventListener("scroll", handleScroll);
+
+       return () => window.removeEventListener("scroll", handleScroll);
+     }, []);
+
+
 
   return (
     <main id="tela-projetos">
       <h1 className="nome-pagina">Meus Projetos</h1>
-      <article className="lista-projetos">
+      <article className={`lista-projetos ${scrolled ? "show" : ""}`}>
         {projetos.map((projeto, index) => {
           return (
             <section key={index} className="card-projeto">
@@ -27,8 +45,21 @@ const Projetos = () => {
                 />
               </div>
               <div className="botoes">
-                <button onClick={(e)=>{e.preventDefault(), handleAcessarRepositorio(projeto.linkGitHub)}}>Repositório</button>
-                <button onClick={(e)=>{e.preventDefault(), handleAcessarPagina(projeto.linkPagina)}}>Página</button>
+                <button
+                  onClick={(e) => {
+                    e.preventDefault(),
+                      handleAcessarRepositorio(projeto.linkGitHub);
+                  }}
+                >
+                  Repositório
+                </button>
+                <button
+                  onClick={(e) => {
+                    e.preventDefault(), handleAcessarPagina(projeto.linkPagina);
+                  }}
+                >
+                  Página
+                </button>
               </div>
             </section>
           );

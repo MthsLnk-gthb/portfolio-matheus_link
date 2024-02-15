@@ -8,7 +8,7 @@ const Habilidades = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 2200) {
         setScrolled(true);
       }
     };

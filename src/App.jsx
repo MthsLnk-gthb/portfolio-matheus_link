@@ -5,14 +5,14 @@ import Projetos from "./Componentes/Projetos";
 
 function App() {
   return (
-    <>
-      <main className="App">
-      <Header />
-        <Inicio />
-        <Projetos/>
-        <Habilidades/>
-      </main>
-    </>
+      <>
+        <main className="App">
+          <Header />
+          <Inicio />
+          <Projetos />
+          <Habilidades />
+        </main>
+      </>
   );
 }
 
