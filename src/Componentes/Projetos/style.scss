@@ -1,1 +1,58 @@
-@import '../../styles/variaveis.scss';
+@import "../../styles/variaveis.scss";
+
+#tela-projetos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  background-color: $azul-05;
+}
+
+.lista-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  margin: 10dvh auto;
+}
+
+.card-projeto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  max-width: 70dvw;
+  height: 350px;
+  background-color: $azul-04;
+  position: relative;
+  border-radius: 10px;
+
+  h3 {
+    position: absolute;
+    top: 15px;
+  }
+
+  .box-imagem {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+
+    img {
+         border-radius: inherit;
+    }
+  }
+
+  .botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 25px;
+    width: 95%;
+  }
+}
