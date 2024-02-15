@@ -1,5 +1,7 @@
 import "./style.scss";
 
+import minhaFoto from "/public/imgs/my-photo.png"
+
 const Inicio = () => {
   const handleLinkedin = () => {
     window.open("https://www.linkedin.com/in/matheus-link-21b3a4265/");
@@ -39,7 +41,7 @@ const Inicio = () => {
         </section>
 
         <section className="minha-foto">
-          <img src="public/imgs/my-photo.png" alt="Foto de Matheus Link" />
+          <img src={minhaFoto} alt="Foto de Matheus Link" />
         </section>
       </main>
     </>
