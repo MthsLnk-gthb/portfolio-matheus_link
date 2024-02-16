@@ -8,54 +8,66 @@
   border-bottom: 1px solid $branco;
   display: flex;
   flex-wrap: wrap-reverse;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  z-index: 0;
 }
 
-.introducao-e-botoes {
-  width: 400px;
+.conteudo-inicial {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 20px;
+  justify-content: space-around;
+  width: 90dvw;
 
-  .botoes {
+  .introducao-e-botoes {
+    width: 400px;
     display: flex;
-    margin-top: 2dvh;
-    width: 100%;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
 
-    button {
-      width: 180px;
-      max-width: 25dvw;
-      height: 40px;
-      border-radius: 5px;
-      border: 1px solid $branco-desbotado;
-      color: $branco;
-      font-size: 1.1rem;
-      font-weight: 600;
-      transition: ease 0.4s;
+    .botoes {
+      display: flex;
+      margin-top: 2dvh;
+      left: 0;
+      width: auto;
 
-      &:hover {
-        cursor: pointer;
-        border: 1px solid $branco;
+      button {
+        width: 180px;
+        max-width: 25dvw;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid $branco-desbotado;
+        color: $branco;
+        font-size: 1.1rem;
+        font-weight: 600;
+        transition: ease 0.4s;
+
+        &:hover {
+          cursor: pointer;
+          border: 1px solid $branco;
+        }
       }
-    }
 
-    .btn-linkedin {
-      background-color: transparent;
+      .btn-linkedin {
+        background-color: transparent;
 
-      &:hover {
-        background-color: $azul-03;
+        &:hover {
+          background-color: $azul-03;
+        }
       }
-    }
 
-    .btn-github {
-      background-color: transparent;
+      .btn-github {
+        background-color: transparent;
+        margin-left: 2dvw;
 
-      &:hover {
-        background-color: $cinza-01;
+        &:hover {
+          background-color: $cinza-01;
+        }
       }
     }
   }
-}
 
 .minha-foto {
   width: 220px;
@@ -67,5 +79,10 @@
 }
 .minha-foto img {
   scale: 1.2;
-  filter: saturate(130%) contrast(120%) brightness(90%) drop-shadow( 0 2px 5px $preto-01);
+  filter: saturate(130%) contrast(120%) brightness(90%)
+    drop-shadow(0 2px 5px $preto-01);
 }
+
+}
+
+

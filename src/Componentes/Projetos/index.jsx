@@ -1,36 +1,19 @@
 import "./style.scss";
-import projetos from '../../data/Projetos/projetos.js'
-import { useEffect, useState } from "react";
-
+import projetos from "../../data/Projetos/projetos.js";
 
 const Projetos = () => {
+  const handleAcessarPagina = (linkPagina) => {
+    window.open(linkPagina, "_blank");
+  };
 
-    const handleAcessarPagina = (linkPagina)=>{
-        window.open(linkPagina, '_blank')
-    }
-
-    const handleAcessarRepositorio = (linkRepositorio)=>{
-        window.open(linkRepositorio, '_blank')
-    }
-
-     const [scrolled, setScrolled] = useState(false);
-
-     useEffect(() => {
-       const handleScroll = () => {
-         if (window.scrollY > 200) {
-           setScrolled(true);
-         }
-       };
-
-       window.addEventListener("scroll", handleScroll);
-
-       return () => window.removeEventListener("scroll", handleScroll);
-     }, []);
+  const handleAcessarRepositorio = (linkRepositorio) => {
+    window.open(linkRepositorio, "_blank");
+  };
 
   return (
     <main id="tela-projetos">
       <h1 className="nome-pagina">Meus Projetos</h1>
-      <article className={`lista-projetos ${scrolled ? "show" : ""}`}>
+      <article className="lista-projetos">
         {projetos.map((projeto, index) => {
           return (
             <section key={index} className="card-projeto">
@@ -42,7 +25,8 @@ const Projetos = () => {
                 />
               </div>
               <div className="botoes">
-                <button className="botao repositorio"
+                <button
+                  className="botao repositorio"
                   onClick={(e) => {
                     e.preventDefault(),
                       handleAcessarRepositorio(projeto.linkGitHub);
@@ -51,7 +35,7 @@ const Projetos = () => {
                   Repositório
                 </button>
                 <button
-                className="botao pagina"
+                  className="botao pagina"
                   onClick={(e) => {
                     e.preventDefault(), handleAcessarPagina(projeto.linkPagina);
                   }}
@@ -65,6 +49,6 @@ const Projetos = () => {
       </article>
     </main>
   );
-}
+};
 
-export default Projetos
+export default Projetos;

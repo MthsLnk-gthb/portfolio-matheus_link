@@ -17,16 +17,53 @@
   justify-content: center;
   align-items: center;
   justify-content: space-around;
+  margin: 2dvh auto;
 
   .texto-e-cv {
-    width: 400px;
+    width: 600px;
+    max-width: 90dvw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    button {
+      width: 150px;
+      height: 40px;
+      margin: 3dvh auto;
+      background-color: transparent;
+      border: 1px solid $branco;
+      font-size: 1.1rem;
+      color: $branco;
+      transition: ease-in 0.4s;
+
+      &:hover {
+        background-color: $azul-05;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
   }
 
   .lista-contatos {
     display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h2 {
+      margin: 1dvh auto;
+    }
 
     ul {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
       margin: auto;
       text-align: center;
       list-style: none;
@@ -40,6 +77,13 @@
           height: 50px;
           border-radius: 50%;
           background-color: $azul-01;
+          display: grid;
+          place-items: center;
+
+          img {
+            width: 35px;
+            height: 35px;
+          }
         }
       }
     }

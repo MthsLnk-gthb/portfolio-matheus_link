@@ -1,27 +1,13 @@
 import "./style.scss";
-import { useState, useEffect } from "react";
 
 import minhasHabilidades from "../../data/Habilidades/habilidades.js";
 
 const Habilidades = () => {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 2900) {
-        setScrolled(true);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+ 
   return (
     <main id="pagina-habilidades">
       <h1 className="nome-pagina">Minhas Habilidades</h1>
-      <article className={`lista-habilidades ${scrolled ? "show" : ""}`}>
+      <article className="lista-habilidades">
         {minhasHabilidades.map((habilidade, index) => {
           return (
             <section key={index} className="habilidade">

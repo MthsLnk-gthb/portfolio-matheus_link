@@ -1,5 +1,9 @@
 import "./style.scss";
 
+import whatsAppSVG from "/public/iconsRedes/whatsapp-icon.svg";
+import emailSVG from "/public/iconsRedes/gmail-icon.svg";
+import instagramSVG from "/public/iconsRedes/instagram-icon.svg";
+
 const SobreMim = () => {
   const handleAcessarCV = () => {
     window.open(
@@ -29,19 +33,26 @@ const SobreMim = () => {
           </button>
         </section>
         <section className="lista-contatos">
+          <h2>Contatos</h2>
           <ul>
             <li className="contato">
-              <div></div>
+              <div>
+                <img src={whatsAppSVG} alt="" />
+              </div>
               <h4>WhatsApp</h4>
               <span>(41)99972-4736</span>
             </li>
             <li className="contato">
-              <div></div>
+              <div>
+                <img src={emailSVG} alt="" />
+              </div>
               <h4>Email</h4>
               <span>matheuslink.dev@gmail.com</span>
             </li>
             <li className="contato">
-              <div></div>
+              <div>
+                <img src={instagramSVG} alt="" />
+              </div>
               <h4>Instagram</h4>
               <span>@matheus._.link</span>
             </li>

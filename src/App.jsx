@@ -1,22 +1,32 @@
-import Certificados from "./Componentes/Certificados";
-import Habilidades from "./Componentes/Habilidades";
-import Header from "./Componentes/Header";
+import Certificados from "./Componentes/Certificados/index";
+import Habilidades from "./Componentes/Habilidades/index";
+import Header from "./Componentes/Header/index";
 import Inicio from "./Componentes/Inicio/index";
-import Projetos from "./Componentes/Projetos";
-import SobreMim from './Componentes/SobreMim/index';
+import Projetos from "./Componentes/Projetos/index";
+import SobreMim from "./Componentes/SobreMim/index";
 
 function App() {
   return (
-      <>
-        <main className="App">
-          <Header />
+    <>
+      <main className="App">
+        <Header />
+        <section id="inicio">
           <Inicio />
+        </section>
+        <section id="sobreMim">
+          <SobreMim />
+        </section>
+        <section id="projetos">
           <Projetos />
-          <SobreMim/>
+        </section>
+        <section id="habilidades">
           <Habilidades />
-          <Certificados/>
-        </main>
-      </>
+        </section>
+        <section id="certificados">
+          <Certificados />
+        </section>
+      </main>
+    </>
   );
 }
 
