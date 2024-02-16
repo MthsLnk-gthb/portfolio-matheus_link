@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 
 const Projetos = () => {
 
-
     const handleAcessarPagina = (linkPagina)=>{
         window.open(linkPagina, '_blank')
     }
@@ -28,8 +27,6 @@ const Projetos = () => {
        return () => window.removeEventListener("scroll", handleScroll);
      }, []);
 
-
-
   return (
     <main id="tela-projetos">
       <h1 className="nome-pagina">Meus Projetos</h1>
@@ -45,7 +42,7 @@ const Projetos = () => {
                 />
               </div>
               <div className="botoes">
-                <button
+                <button className="botao repositorio"
                   onClick={(e) => {
                     e.preventDefault(),
                       handleAcessarRepositorio(projeto.linkGitHub);
@@ -54,6 +51,7 @@ const Projetos = () => {
                   Repositório
                 </button>
                 <button
+                className="botao pagina"
                   onClick={(e) => {
                     e.preventDefault(), handleAcessarPagina(projeto.linkPagina);
                   }}

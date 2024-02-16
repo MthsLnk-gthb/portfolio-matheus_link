@@ -1,1 +1,47 @@
-@import '../../styles/variaveis.scss';
+@import "../../styles/variaveis.scss";
+
+#tela-sobremim {
+  width: 100dvw;
+  height: 100dvh;
+  border-bottom: 1px solid $branco;
+  background-color: $azul-04;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.container-sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+
+  .texto-e-cv {
+    width: 400px;
+  }
+
+  .lista-contatos {
+    display: flex;
+
+    ul {
+      display: flex;
+      margin: auto;
+      text-align: center;
+      list-style: none;
+
+      .contato {
+        margin: auto 5dvw;
+
+        div {
+          margin: auto;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: $azul-01;
+        }
+      }
+    }
+  }
+}

@@ -6,13 +6,14 @@
   justify-content: center;
   align-items: center;
   width: 100dvw;
+  border-bottom: 1px solid $branco;
   background-color: $azul-05;
 }
 
 .lista-projetos {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 35px;
   justify-content: center;
   align-items: center;
   margin: 10dvh auto;
@@ -20,8 +21,6 @@
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
-
-
 
 .card-projeto {
   display: flex;
@@ -48,7 +47,7 @@
     position: absolute;
 
     img {
-         border-radius: inherit;
+      border-radius: inherit;
     }
   }
 
@@ -58,6 +57,29 @@
     align-items: center;
     position: absolute;
     bottom: 25px;
-    width: 95%;
+    width: 90%;
+
+    .botao {
+      width: 45%;
+      height: 40px;
+      border: 1px solid $branco;
+      background-color: transparent;
+      border-radius: 5px;
+      color: $branco;
+      font-size: 1.1rem;
+      transition: ease-in 0.3s;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .repositorio:hover {
+      background-color: $cinza-01;
+    }
+
+    .pagina:hover {
+      background-color: $azul-05;
+    }
   }
 }
