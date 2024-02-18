@@ -1,0 +1,72 @@
+#pagina-inicial {
+  background-image: url("/public/imgs/wave-haikei.svg");
+  background-size: cover;
+  width: 100dvw;
+  min-height: 100dvh;
+  border-bottom: 1px solid #eef4ff;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo-inicial {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 20px;
+  justify-content: space-around;
+  width: 90dvw;
+}
+.conteudo-inicial .introducao-e-botoes {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+}
+.conteudo-inicial .introducao-e-botoes .botoes {
+  display: flex;
+  margin-top: 2dvh;
+  left: 0;
+  width: auto;
+}
+.conteudo-inicial .introducao-e-botoes .botoes button {
+  width: 180px;
+  max-width: 25dvw;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgba(238, 244, 255, 0.3137254902);
+  color: #eef4ff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: ease 0.4s;
+}
+.conteudo-inicial .introducao-e-botoes .botoes button:hover {
+  cursor: pointer;
+  border: 1px solid #eef4ff;
+}
+.conteudo-inicial .introducao-e-botoes .botoes .btn-linkedin {
+  background-color: transparent;
+}
+.conteudo-inicial .introducao-e-botoes .botoes .btn-linkedin:hover {
+  background-color: #0a66c2;
+}
+.conteudo-inicial .introducao-e-botoes .botoes .btn-github {
+  background-color: transparent;
+  margin-left: 2dvw;
+}
+.conteudo-inicial .introducao-e-botoes .botoes .btn-github:hover {
+  background-color: #6a6a72;
+}
+.conteudo-inicial .minha-foto {
+  width: 220px;
+  height: 220px;
+  background-color: #1374ff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.conteudo-inicial .minha-foto img {
+  scale: 1.2;
+  filter: saturate(130%) contrast(120%) brightness(90%) drop-shadow(0 2px 5px #161616);
+}/*# sourceMappingURL=style.css.map */

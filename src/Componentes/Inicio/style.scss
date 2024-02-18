@@ -4,7 +4,7 @@
   background-image: url("/public/imgs/wave-haikei.svg");
   background-size: cover;
   width: 100dvw;
-  height: 100dvh;
+  min-height: 100dvh;
   border-bottom: 1px solid $branco;
   display: flex;
   flex-wrap: wrap-reverse;

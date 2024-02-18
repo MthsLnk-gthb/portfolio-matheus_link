@@ -1,0 +1,72 @@
+#tela-projetos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  border-bottom: 1px solid #eef4ff;
+  background-color: #0b0334;
+}
+
+.lista-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+  margin: 10dvh auto;
+}
+
+.card-projeto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  max-width: 70dvw;
+  height: 350px;
+  background-color: #003eb0;
+  position: relative;
+  border-radius: 10px;
+}
+.card-projeto h3 {
+  position: absolute;
+  top: 15px;
+}
+.card-projeto .box-imagem {
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  position: absolute;
+}
+.card-projeto .box-imagem img {
+  border-radius: inherit;
+}
+.card-projeto .botoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 25px;
+  width: 90%;
+}
+.card-projeto .botoes .botao {
+  width: 45%;
+  height: 40px;
+  border: 1px solid #eef4ff;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #eef4ff;
+  font-size: 1.1rem;
+  transition: ease-in 0.3s;
+}
+.card-projeto .botoes .botao:hover {
+  cursor: pointer;
+}
+.card-projeto .botoes .repositorio:hover {
+  background-color: #6a6a72;
+}
+.card-projeto .botoes .pagina:hover {
+  background-color: #0b0334;
+}/*# sourceMappingURL=style.css.map */

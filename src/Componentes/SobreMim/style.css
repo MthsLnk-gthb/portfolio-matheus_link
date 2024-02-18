@@ -1,0 +1,85 @@
+#tela-sobremim {
+  width: 100dvw;
+  min-height: 100dvh;
+  border-bottom: 1px solid #eef4ff;
+  background-color: #003eb0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-sobre {
+  margin: 2dvh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.container-sobre .texto-e-cv {
+  width: 600px;
+  max-width: 90dvw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.container-sobre .texto-e-cv p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.container-sobre .texto-e-cv button {
+  width: 150px;
+  height: 40px;
+  margin: 2dvh auto;
+  background-color: transparent;
+  border: 1px solid #eef4ff;
+  font-size: 1.1rem;
+  color: #eef4ff;
+  transition: ease-in 0.4s;
+}
+.container-sobre .texto-e-cv button:hover {
+  background-color: #0b0334;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container-sobre .lista-contatos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2dvh auto;
+}
+.container-sobre .lista-contatos h2 {
+  margin: 1dvh auto;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #eef4ff;
+  text-decoration: underline;
+}
+.container-sobre .lista-contatos ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
+.container-sobre .lista-contatos ul .contato {
+  margin: auto 5dvw;
+}
+.container-sobre .lista-contatos ul .contato h4 {
+  font-weight: 200;
+}
+.container-sobre .lista-contatos ul .contato div {
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3e9fff;
+  display: grid;
+  place-items: center;
+}
+.container-sobre .lista-contatos ul .contato div img {
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=style.css.map */

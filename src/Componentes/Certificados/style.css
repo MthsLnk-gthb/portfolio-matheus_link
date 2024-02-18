@@ -1,0 +1,43 @@
+#pagina-certificacoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #0b0334;
+}
+
+.lista-certificacoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 10dvh auto;
+}
+.lista-certificacoes .card-certificacao {
+  width: 300px;
+  height: 130px;
+  background-color: #003eb0;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.lista-certificacoes .card-certificacao h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  position: absolute;
+  top: 10px;
+}
+.lista-certificacoes .card-certificacao h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #3e9fff;
+  position: absolute;
+  bottom: 15px;
+}/*# sourceMappingURL=style.css.map */

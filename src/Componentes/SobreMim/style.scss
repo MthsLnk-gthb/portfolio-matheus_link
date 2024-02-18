@@ -2,7 +2,7 @@
 
 #tela-sobremim {
   width: 100dvw;
-  height: 100dvh;
+  min-height: 100dvh;
   border-bottom: 1px solid $branco;
   background-color: $azul-04;
   display: flex;
