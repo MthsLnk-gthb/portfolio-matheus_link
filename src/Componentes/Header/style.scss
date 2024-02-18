@@ -5,43 +5,97 @@
   height: 50px;
   background-color: $preto-desbotado;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 5rem;
   position: fixed;
   top: 0;
   z-index: 1;
   backdrop-filter: blur(2px);
   border-bottom: 1px solid $branco-desbotado;
-}
 
-.header-portfolio > nav {
-  justify-content: space-between;
-  a {
-    font-size: 1.1rem;
+  .logo {
+    font-size: 1.7rem;
     color: $branco;
-    transition: transform 0.2s;
-    text-decoration: none;
-    margin: auto 2vw;
-    position: relative;
+  }
 
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: -1px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: $branco-desbotado;
-      border-radius: 1px;
-      transform: scaleX(0);
-      transition: transform 0.3s;
+  .links {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 10dvw;
+
+    a {
+      font-size: 1.1rem;
+      font-weight: 200;
+      color: $branco;
+      transition: transform 0.2s;
+      text-decoration: none;
+      position: relative;
+      margin: 1dvw;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $branco-desbotado;
+        border-radius: 1px;
+        transform: scaleX(0);
+        transition: transform 0.3s;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        &:after {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 767px) {
+    .logo {
+      font-size: 1.3rem;
     }
 
-    &:hover {
-      cursor: pointer;
-      &:after {
-        transform: scaleX(1);
-      }
+    .links {
+      display: none;
+    }
+
+    .mobile-menu {
+      display: flex;
+      right: 20px;
+      top: 10px;
+      position: absolute;
+    }
+
+    .menu-aberto {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2dvh;
+      padding: 2dvw;
+      background-color: $preto-desbotado;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      margin: 0;
+      width: 100dvw;
     }
   }
 }
