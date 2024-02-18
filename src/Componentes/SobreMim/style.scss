@@ -7,17 +7,16 @@
   background-color: $azul-04;
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
 
 .container-sobre {
+  margin: 2dvh auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-  margin: 2dvh auto;
 
   .texto-e-cv {
     width: 600px;
@@ -34,7 +33,7 @@
     button {
       width: 150px;
       height: 40px;
-      margin: 3dvh auto;
+      margin: 2dvh auto;
       background-color: transparent;
       border: 1px solid $branco;
       font-size: 1.1rem;
@@ -53,39 +52,50 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 2dvh auto;
 
     h2 {
       margin: 1dvh auto;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: $branco;
+      text-decoration: underline;
     }
 
     ul {
       display: flex;
       flex-wrap: wrap;
+      gap: 20px;
       justify-content: center;
       align-items: center;
-      gap: 25px;
-      margin: auto;
       text-align: center;
       list-style: none;
 
       .contato {
         margin: auto 5dvw;
 
+        h4 {
+          font-weight: 200;
+        }
+
         div {
           margin: auto;
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
           border-radius: 50%;
           background-color: $azul-01;
           display: grid;
           place-items: center;
 
           img {
-            width: 35px;
-            height: 35px;
+            width: 30px;
+            height: 30px;
           }
         }
       }
     }
   }
+}
+
+@media (max-width: 767px) {
 }

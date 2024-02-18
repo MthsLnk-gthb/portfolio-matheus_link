@@ -69,20 +69,17 @@
     }
   }
 
-.minha-foto {
-  width: 220px;
-  height: 220px;
+  .minha-foto {
+    width: 220px;
+    height: 220px;
 
-  background-color: $azul-02;
-  border-radius: $circulo;
-  overflow: hidden;
+    background-color: $azul-02;
+    border-radius: $circulo;
+    overflow: hidden;
+  }
+  .minha-foto img {
+    scale: 1.2;
+    filter: saturate(130%) contrast(120%) brightness(90%)
+      drop-shadow(0 2px 5px $preto-01);
+  }
 }
-.minha-foto img {
-  scale: 1.2;
-  filter: saturate(130%) contrast(120%) brightness(90%)
-    drop-shadow(0 2px 5px $preto-01);
-}
-
-}
-
-

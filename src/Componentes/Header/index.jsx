@@ -26,7 +26,7 @@ const Header = () => {
             handleShowLinks();
           }}
         >
-          <img src={menuIcon} alt="" />
+          <img src={menuIcon} alt="menu-hamburguer" />
         </section>
 
         <ul
