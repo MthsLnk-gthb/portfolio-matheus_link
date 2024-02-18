@@ -14,7 +14,8 @@
   border-bottom: 1px solid rgba(238, 244, 255, 0.3137254902);
 }
 .header-portfolio .logo {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
+  font-weight: 200;
   color: #eef4ff;
 }
 .header-portfolio .links {

@@ -23,7 +23,7 @@
   justify-content: center;
   align-items: center;
   width: 500px;
-  max-width: 70dvw;
+  max-width: 90dvw;
   height: 350px;
   background-color: #003eb0;
   position: relative;
@@ -32,6 +32,8 @@
 .card-projeto h3 {
   position: absolute;
   top: 15px;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 .card-projeto .box-imagem {
   width: 90%;
