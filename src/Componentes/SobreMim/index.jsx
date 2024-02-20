@@ -7,7 +7,7 @@ import instagramSVG from "/public/iconsRedes/instagram-icon.svg";
 const SobreMim = () => {
   const handleAcessarCV = () => {
     window.open(
-      "https://drive.google.com/file/d/1l0Sstb-DrP1wiMnEZTHelUSRSygPJW2x/view?usp=drive_link"
+      "https://drive.google.com/file/d/1pJPQrPULfIz1J8ytAwqhd_y592cWatWR/view?usp=drive_link"
     );
   };
 
@@ -17,12 +17,14 @@ const SobreMim = () => {
       <article className="container-sobre">
         <section className="texto-e-cv">
           <p>
-            Com 18 anos e atualmente cursando Ciências da Computação, enxergo a
-            busca e aplicação contínua de conhecimento como um pilar fundamental
-            em minha jornada. Fascinado pela evolução tecnológica, estou sempre
-            explorando novas soluções e desafios. Minha dedicação à aprendizagem
-            se reflete no meu compromisso em oferecer contribuições valiosas no
-            campo da computação.
+            Tenho 18 anos de idade, curso Ciências da Computação e tenho muita
+            determinação e entusiasmo por botar em prática e aprender constantemente.
+            <br />
+            Atualmete estou em busca de uma vaga de estágio ou trainee onde eu possa conseguir uma 
+            experiência profissional e aprender com uma equipe determinada em oferecer o melhor.
+            <br />
+            Abaixo você pode vizualizar meu currículo e também encontrar opções de contato.
+
           </p>
           <button
             onClick={(e) => {
