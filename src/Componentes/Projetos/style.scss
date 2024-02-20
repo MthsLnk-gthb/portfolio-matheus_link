@@ -26,7 +26,7 @@
   align-items: center;
   width: 500px;
   max-width: 90dvw;
-  height: 350px;
+  height: 320px;
   background-color: $azul-04;
   position: relative;
   border-radius: 10px;
@@ -43,10 +43,24 @@
     height: auto;
     border-radius: 5px;
     overflow: hidden;
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      position: absolute;
+      z-index: 1;
+      font-size: 1.7rem;
+      font-weight: 700;
+      opacity: 60%;
+    }
 
     img {
       border-radius: inherit;
+    }
+
+    .nao-finalizado {
+      filter: brightness(30%);
     }
   }
 
@@ -55,7 +69,7 @@
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    bottom: 25px;
+    bottom: 10px;
     width: 90%;
 
     .botao {

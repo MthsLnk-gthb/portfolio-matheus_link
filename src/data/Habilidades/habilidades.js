@@ -4,7 +4,6 @@ import sassIcon from "/public/iconsHabilidades/sass-icon.svg";
 import jsIcon from "/public/iconsHabilidades/javascript-icon.svg";
 import reactIcon from "/public/iconsHabilidades/react-icon.svg";
 import nodeIcon from "/public/iconsHabilidades/node-icon.svg";
-import javaIcon from "/public/iconsHabilidades/java-icon.svg";
 import gitIcon from "/public/iconsHabilidades/git-icon.svg";
 import gitHubIcon from "/public/iconsHabilidades/github-icon.svg";
 import figmaIcon from "/public/iconsHabilidades/figma-icon.svg";
@@ -33,10 +32,6 @@ const listaHabilidades = [
   {
     habilidade: "Node JS",
     imagem: nodeIcon,
-  },
-  {
-    habilidade: "Java",
-    imagem: javaIcon,
   },
   {
     habilidade: "Git",

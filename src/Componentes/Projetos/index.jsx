@@ -17,12 +17,17 @@ const Projetos = () => {
         {projetos.map((projeto, index) => {
           return (
             <section key={index} className="card-projeto">
-              <h3>{projeto.nomeProjeto}</h3>
+              <h3>{projeto.nomeProjeto} </h3>
+
               <div className="box-imagem">
                 <img
+                  className={
+                    projeto.finalizado === false ? "nao-finalizado" : ""
+                  }
                   src={projeto.screenshotProjeto}
                   alt={projeto.nomeProjeto}
                 />
+                {projeto.finalizado === false && <span>Não Finalizado</span>}
               </div>
               <div className="botoes">
                 <button
